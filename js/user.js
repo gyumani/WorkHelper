@@ -6,7 +6,6 @@ const content_container = document.querySelector("#content_container");
 
 const HIDDEN_CLASSNAME = "hidden";
 const USERNAME_KEY = "username";
-const TODOS_KEY = "todos";
 const REAL_USERNAME = null;
 
 function onLoginSubmit(e) {
@@ -36,6 +35,7 @@ function paintWelcome() {
 
 function logout() {
   localStorage.removeItem(USERNAME_KEY);
+  localStorage.removeItem(TODO_KEY);
   location.reload();
 }
 

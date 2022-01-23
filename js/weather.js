@@ -14,9 +14,7 @@ function onGeoOk(position) {
       let weatherEmoji;
       city.innerText = local;
       weatherSpan.innerText = weather;
-      console.log(data.name, data.weather[0].main);
     });
-  console.log(url);
 }
 
 function onGeoError() {
