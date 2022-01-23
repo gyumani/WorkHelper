@@ -26,8 +26,9 @@ body {
 .bg {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
   height: 100vh;
   z-index: -2;
 }
